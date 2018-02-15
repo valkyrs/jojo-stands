@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <title>Stand Rank</title>
+</head>
+<body style="background: #f5f5f5">
+  <button onclick="
+  ranking.set_rank(['A', 'A', 'C', 'E', 'A', 'C']);
+  ranking.set_color(
+    'rgba(255, 0, 0, 0.6)', // ranking thing in the middle
+    'rgba(0, 0, 0, 1)', // letters
+    'rgba(0, 0, 0, 0.5)');// shadows
+  background.set_color(
+    'rgba(0, 0, 0, 1)', // text
+    'rgba(0, 0, 0, 1)', // circle
+    'rgba(0, 0, 0, 0.5)'); // shadows
+  ">Star Platinum</button><br />
+
+  <button onclick="
+  ranking.set_rank(['D', 'C', 'D', 'A', 'D', 'E']);
+  ranking.set_color(
+    'rgba(255, 35, 189, 1)',
+    'rgba(255, 255, 255, 1)',
+    'rgba(0, 0, 0, 0.7)');
+  background.set_color(
+    'rgba(255, 255, 255, 1)',
+    'rgba(255, 255, 255, 1)',
+    'rgba(0, 0, 0, 0.5)');
+  ">Hermit Purple</button><br />
+
+  <button onclick="
+  ranking.set_rank(['A', 'A', 'C', 'A', 'B', 'B']);
+  ranking.set_color(
+    'rgba(255, 236, 35, 1)',
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 0.7)');
+  background.set_color(
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 0.5)');
+  ">ザ・ワールド</button><br />
+
+  <button onclick="
+  ranking.set_rank(['A', 'B', '_', 'D', 'A', '?']);
+  ranking.set_color(
+    'rgba(123, 35, 255, 1)',
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 0.7)');
+  background.set_color(
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 1)',
+    'rgba(0, 0, 0, 0.5)');
+  ">All</button><br />
+
+<canvas id="dr_top" style="position: absolute; z-index: -1;"></canvas>
+<canvas id="dr_bot" style="position: absolute; z-index: -2;"></canvas>
+<script src="jojo-stands.js"></script>
+</body>
+</html>
